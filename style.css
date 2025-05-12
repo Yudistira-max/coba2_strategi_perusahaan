@@ -1,0 +1,130 @@
+/* File: style.css */
+
+body {
+  font-family: 'Times New Roman', Times, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #03ac0e;
+  color: white;
+  padding: 20px;
+  justify-content: space-between; /* Memastikan logo di kiri dan judul di tengah */
+}
+
+header h1 {
+  position: absolute;
+  left: 50%; /* Posisikan di tengah secara horizontal */
+  transform: translateX(-50%); /* Memastikan teks berada tepat di tengah */
+  margin: 0; /* Menghapus margin default */
+  font-size: 24px;
+  max-width: 600px;
+  margin: auto;
+  color: #F0F0F0;
+}
+
+header img {
+  max-width: 120px; /* Ukuran logo yang proporsional */
+  height: auto;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #02920c;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #027c0a;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+  color: #027c0a;
+}
+
+footer {
+  background-color: #03ac0e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.card, .info-box, .concept-box {
+  background: white;
+  border-left: 5px solid #03ac0e;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.highlight-box {
+  background-color: #e9fbe8;
+  border-left: 6px solid #03ac0e;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.quote-box {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f0fdf3;
+  border-left: 6px solid #03ac0e;
+  font-style: italic;
+  border-radius: 6px;
+  color: #027c0a;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
